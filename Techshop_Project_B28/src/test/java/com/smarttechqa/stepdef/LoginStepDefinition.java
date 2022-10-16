@@ -3,11 +3,14 @@ package com.smarttechqa.stepdef;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import com.mongodb.assertions.Assertions;
 import com.smarttechqa.basepage.BaseClass;
+import com.smarttechqa.elements.ElementPage;
 import com.smarttechqa.utils.Utilities;
 
 import io.cucumber.java.en.Given;
@@ -17,9 +20,12 @@ import io.restassured.internal.common.assertion.Assertion;
 
 public class LoginStepDefinition extends BaseClass {
 	
+	ElementPage pf = PageFactory.initElements(driver, ElementPage.class);
+	
 	@Given("User opens the browser")
 	public void user_opens_the_browser() throws InterruptedException, IOException {
-		BaseClass.setUp();
+		//BaseClass.setUp();
+		
 	    
 	}
 
@@ -31,21 +37,24 @@ public class LoginStepDefinition extends BaseClass {
 
 	@When("User clicks on the Sign In button")
 	public void user_clicks_on_the_sign_in_button() {
-		driver.findElement(By.xpath("//a[@href='/login']")).click(); //This is going to the login page
+		pf.getLoginButton().click();
+		//driver.findElement(By.xpath("//a[@href='/login']")).click(); //This is going to the login page
 		//driver.findElement(By.xpath("(//a[@class='nav-link'])[3]")).click();
 	}
 
 	@When("User Enters the email")
 	public void user_enters_the_email() throws IOException {
 		//driver.findElement(By.id("email")).sendKeys("testuser@email.com");
-		driver.findElement(By.xpath("//*[@type='email']")).sendKeys("testuser@email.com"); //Sending the email address
+		pf.getEmail().sendKeys("testuser@email.com");
+		//driver.findElement(By.xpath("//*[@type='email']")).sendKeys("testuser@email.com"); //Sending the email address
 		Utilities.getHighLighter(driver.findElement(By.xpath("//*[@type='email']")));
 		Utilities.takeScreenShot();
 	}
 
 	@When("User Enters the password")
 	public void user_enters_the_password() {
-		driver.findElement(By.id("password")).sendKeys("123456");
+		pf.getPassword().sendKeys("123456");
+		//driver.findElement(By.id("password")).sendKeys("123456");
 		//driver.findElement(By.cssSelector("#password")).sendKeys("123456");
 	    
 	}

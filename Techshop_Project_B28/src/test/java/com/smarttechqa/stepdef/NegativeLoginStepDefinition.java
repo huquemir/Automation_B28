@@ -3,17 +3,21 @@ package com.smarttechqa.stepdef;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
 
 import com.smarttechqa.basepage.BaseClass;
+import com.smarttechqa.elements.ElementPage;
 
 import io.cucumber.java.en.*;
 
 
 public class NegativeLoginStepDefinition extends BaseClass {
 	
+	ElementPage pf = PageFactory.initElements(driver, ElementPage.class);
+	
 	@Given("I open the browser and I navigate to the application")
 	public void i_open_the_browser_and_i_navigate_to_the_application() throws InterruptedException, IOException {
-		BaseClass.setUp();
+		//BaseClass.setUp();
 	    
 	}
 

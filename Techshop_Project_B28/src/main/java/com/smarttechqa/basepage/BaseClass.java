@@ -11,14 +11,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.smarttechqa.utils.Utilities;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseClass {
 
 	//Static variable are outside of methods and inside the class
 	public static WebDriver driver;
 	
-	public static void setUp() throws InterruptedException, IOException{
-		
-		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
+	public static void setUp(){
+		WebDriverManager.chromedriver().setup();
+		//System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();	//This will delete user session information	
@@ -54,11 +56,11 @@ public class BaseClass {
 		
 	}
 	
-	public static void main(String[] args) throws InterruptedException, IOException {
-		
-		BaseClass.setUp();
-		
-	}
+//	public static void main(String[] args) throws InterruptedException, IOException {
+//		
+//		BaseClass.setUp();
+//		
+//	}
 	
 
 }
