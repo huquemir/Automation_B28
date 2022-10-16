@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.smarttechqa.runner.FeatureRunner">
+      <class name="com.smarttechqa.testng.TestNGPractice">
         <methods>
-          <include name="runScenario" invocation-numbers="2"/>
-          <include name="tearDownClass"/>
-          <include name="setUpClass"/>
+          <include name="googleSearch"/>
+          <include name="clickImageButton"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.smarttechqa.runner.FeatureRunner -->
+      </class> <!-- com.smarttechqa.testng.TestNGPractice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
