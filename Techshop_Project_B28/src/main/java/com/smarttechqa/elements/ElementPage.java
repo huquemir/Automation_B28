@@ -29,6 +29,7 @@ public class ElementPage extends BaseClass {
 	public WebElement getEmail() {
 		return email;
 	}
+
 	
 	@FindBy(id = "password")
 	@CacheLookup
@@ -38,6 +39,34 @@ public class ElementPage extends BaseClass {
 		return password;
 	}
 	
+	@FindBy(name = "q")
+	@CacheLookup
+	private WebElement search;
+
+	public WebElement getSearch() {
+		return search;
+	}
+	
+	@FindBy(xpath = "//button[text()='Search']")
+	private WebElement searchButton;
+
+	public WebElement getSearchButton() {
+		return searchButton;
+	}
+	@FindBy(xpath = "//*[text()='Airpods Wireless Bluetooth Headphones']")
+	@CacheLookup
+	private WebElement airpods;
+
+	public WebElement getAirpods() {
+		return airpods;
+	}
+	
+	@FindBy(xpath = "(//*[text()='Airpods Wireless Bluetooth Headphones'])[2]")
+	private WebElement airpodsPage;
+
+	public WebElement getAirpodsPage() {
+		return airpodsPage;
+	}
 	
 	
 	
