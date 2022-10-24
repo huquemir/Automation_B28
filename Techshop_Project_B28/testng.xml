@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Testing">
+<listeners>
+<listener class-name="com.smarttechqa.listener.TestListener"/>
+</listeners>
+  <test name="Default Testing">
+    <classes>
+      <class name="com.smarttechqa.runner.FeatureRunner"/>
+    </classes>
+  </test>
+</suite>

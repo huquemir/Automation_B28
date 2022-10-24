@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="classes" name="Failed suite [Automation Testing]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="classes" name="Firefox Test(failed)">
+    <parameter name="browserType" value="firefox"/>
+    <classes>
+      <class name="com.smarttechqa.runner.FeatureRunner">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="afterClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- com.smarttechqa.runner.FeatureRunner -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+</suite> <!-- Failed suite [Automation Testing] -->
