@@ -2,6 +2,7 @@ package com.smarttechqa.utils;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -68,7 +69,29 @@ public class Utilities extends BaseClass {
 		
 	}
 	
+	public static void clickDynamicElement(List<WebElement> element, int index) {
+		
+		for (int i = 0; i<element.size(); i++) {
+	    	if (i>=index) {
+	    		element.get(i).click();
+	    		break; //break will break out of the loop once it finds the element
+	    		//Another keyword is called continue which "skips" the element. 
+	    	}
+		
+	}
+	}
 	
+	public static void clickCheckBox(WebElement checkbox) {
+		if (checkbox.isSelected()) {
+			System.out.println("The checkbox is already selected");
+		} else if (!checkbox.isSelected()) {
+			checkbox.click();
+			System.out.println("Now selecting the checkbox");
+		} else {
+			System.out.println("Checkbox did not select");
+		}
+		
+	}
 	
 
 }
