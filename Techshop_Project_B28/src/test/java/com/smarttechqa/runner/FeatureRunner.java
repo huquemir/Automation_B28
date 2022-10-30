@@ -13,7 +13,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-		features = {"Features/Reporting.feature"},
+		features = {"Features/Contacts.feature"},
 		glue = {"com.smarttechqa.stepdef","com.smarttechqa.hooks"}, 
 		plugin = {"pretty","json:target/cucumber.json"},
 		dryRun = false,
@@ -24,7 +24,7 @@ import io.cucumber.testng.CucumberOptions;
 public class FeatureRunner extends AbstractTestNGCucumberTests {
 	@BeforeClass
 	@Parameters("browserType")
-	public static void beforeClass(@Optional("chrome") String browser) throws IOException {
+	public static void beforeClass(@Optional("chrome") String browser)   {
 		new BaseClass();
 		BaseClass.initializeProperties();		
 		BaseClass.property.setProperty("BrowserType", browser);
@@ -35,6 +35,7 @@ public class FeatureRunner extends AbstractTestNGCucumberTests {
 		
 	}
 	
+
 	
 	
 }

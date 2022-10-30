@@ -1,6 +1,7 @@
 package com.smarttechqa.basepage;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -27,10 +28,20 @@ public class BaseClass {
 		PropertyConfigurator.configure("src/test/resources/Log4j.properties");		
 	} 
 
-	public static void initializeProperties() throws IOException {	
-		property = new Properties();
-		InputStream ip = new FileInputStream("src/test/resources/config.properties");
-		property.load(ip);	
+	public static void initializeProperties()      {	
+		
+		try {
+			property = new Properties();
+			InputStream ip = new FileInputStream("src/test/resources/config.properties");
+			property.load(ip);
+		} catch (IOException error) {	
+			error.printStackTrace();
+			System.out.println("Can't find the file");		
+		} catch (Exception error) {
+			error.getMessage();
+		} finally {
+			System.out.println("This code will always run");
+		}
 	}
 		
 	public static void setUp(){

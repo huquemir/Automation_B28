@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-28T01:26:22Z" name="Default suite" finished-at="2022-10-28T01:27:10Z" duration-ms="48592">
+  <suite started-at="2022-10-30T16:46:33Z" name="Default suite" finished-at="2022-10-30T16:47:09Z" duration-ms="35768">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.smarttechqa.runner.FeatureRunner@4372b9b6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-10-28T01:26:22Z" name="Default test" finished-at="2022-10-28T01:27:10Z" duration-ms="48592">
+    <test started-at="2022-10-30T16:46:33Z" name="Default test" finished-at="2022-10-30T16:47:09Z" duration-ms="35768">
       <class name="com.smarttechqa.runner.FeatureRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.smarttechqa.runner.FeatureRunner@4372b9b6]" started-at="2022-10-28T01:26:22Z" name="setUpClass" finished-at="2022-10-28T01:26:22Z" duration-ms="575" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.smarttechqa.runner.FeatureRunner@4372b9b6]" started-at="2022-10-30T16:46:33Z" name="setUpClass" finished-at="2022-10-30T16:46:34Z" duration-ms="564" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@47fb7ec9]]>
+                <![CDATA[org.testng.TestRunner@5a7b309b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.smarttechqa.runner.FeatureRunner@4372b9b6]" started-at="2022-10-28T01:26:22Z" name="beforeClass" finished-at="2022-10-28T01:26:22Z" duration-ms="225" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.smarttechqa.runner.FeatureRunner@4372b9b6]" started-at="2022-10-30T16:46:34Z" name="beforeClass" finished-at="2022-10-30T16:46:34Z" duration-ms="225" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,59 +32,59 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.smarttechqa.runner.FeatureRunner@4372b9b6]" started-at="2022-10-28T01:26:22Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-28T01:26:29Z" duration-ms="6943" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.smarttechqa.runner.FeatureRunner@4372b9b6]" started-at="2022-10-30T16:46:34Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-30T16:46:43Z" duration-ms="9340" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User should be able to click on the upload button"]]>
+                <![CDATA["User can perform Multi Select"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["User should be able to go to reports page"]]>
+                <![CDATA["Contact Us Page"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.smarttechqa.runner.FeatureRunner@4372b9b6]" started-at="2022-10-28T01:26:29Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-28T01:26:50Z" duration-ms="20324" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.smarttechqa.runner.FeatureRunner@4372b9b6]" started-at="2022-10-30T16:46:43Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-30T16:46:46Z" duration-ms="2645" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User should be able to handle alert with Ok button"]]>
+                <![CDATA["User can click on the checkboxes"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["User should be able to go to reports page"]]>
+                <![CDATA["Contact Us Page"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.smarttechqa.runner.FeatureRunner@4372b9b6]" started-at="2022-10-28T01:26:50Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-28T01:27:10Z" duration-ms="20088" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.smarttechqa.runner.FeatureRunner@4372b9b6]" started-at="2022-10-30T16:46:46Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-30T16:47:09Z" duration-ms="22570" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User should be able to handle alert by cancelling"]]>
+                <![CDATA["User can open a new tab window and switch"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["User should be able to go to reports page"]]>
+                <![CDATA["Contact Us Page"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.smarttechqa.runner.FeatureRunner@4372b9b6]" started-at="2022-10-28T01:27:10Z" name="afterClass" finished-at="2022-10-28T01:27:10Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.smarttechqa.runner.FeatureRunner@4372b9b6]" started-at="2022-10-30T16:47:09Z" name="afterClass" finished-at="2022-10-30T16:47:09Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.smarttechqa.runner.FeatureRunner@4372b9b6]" started-at="2022-10-28T01:27:10Z" name="tearDownClass" finished-at="2022-10-28T01:27:10Z" duration-ms="407" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.smarttechqa.runner.FeatureRunner@4372b9b6]" started-at="2022-10-30T16:47:09Z" name="tearDownClass" finished-at="2022-10-30T16:47:09Z" duration-ms="370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
@@ -39,9 +40,13 @@ public class ContactStepDef extends BaseClass {
 	}
 
 	@When("User clicks on Morning and Afternoon checkboxes")
-	public void user_clicks_on_morning_and_afternoon_checkboxes() {
-	    Utilities.clickCheckBox(driver.findElement(By.xpath("//*[text()='Morning']")));
-	    Utilities.clickCheckBox(driver.findElement(By.xpath("//*[text()='Afternoon']")));
+	public void user_clicks_on_morning_and_afternoon_checkboxes() throws InterruptedException {		
+		try {
+		Utilities.clickCheckBox(driver.findElement(By.xpath("//*[text()='Morning']")));
+	    Utilities.clickCheckBox(driver.findElement(By.xpath("//*[text()='Afternoon']"))); 		   
+	    } catch (StaleElementReferenceException e ) {
+	    	 Utilities.clickCheckBox(driver.findElement(By.xpath("//*[text()='Morning']")));
+	    }
 	    
 	}
 

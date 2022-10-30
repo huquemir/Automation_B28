@@ -2,15 +2,20 @@ package com.smarttechqa.utils;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.common.io.Files;
@@ -22,6 +27,15 @@ public class Utilities extends BaseClass {
 		WebDriverWait wait = new WebDriverWait(driver, time);
 		WebElement elem = wait.until(ExpectedConditions.elementToBeClickable(element));
 		return elem;
+	}
+	
+	public static WebElement getFluentWait(WebElement element) {
+		Wait <WebDriver> wait = new FluentWait<>(driver)
+				.withTimeout(Duration.ofSeconds(30)) //Max time 
+				.pollingEvery(Duration.ofSeconds(5)) // Interval time, every let's say 5 seconds
+				.ignoring(StaleElementReferenceException.class);
+			   return wait.until(ExpectedConditions.elementToBeClickable(element));
+		
 	}
 	
 	//clicking challenge
