@@ -13,8 +13,8 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-		features = {"Features/Contacts.feature"},
-		glue = {"com.smarttechqa.stepdef","com.smarttechqa.hooks"}, 
+		features = {"Features/Cart.feature"},
+		glue = {"com.smarttechqa.stepdef", "com.smarttechqa.hooks"}, 
 		plugin = {"pretty","json:target/cucumber.json"},
 		dryRun = false,
 		monochrome = true

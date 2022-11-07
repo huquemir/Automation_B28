@@ -28,7 +28,7 @@ public class BaseClass {
 		PropertyConfigurator.configure("src/test/resources/Log4j.properties");		
 	} 
 
-	public static void initializeProperties()      {	
+	public static void initializeProperties() {	
 		
 		try {
 			property = new Properties();

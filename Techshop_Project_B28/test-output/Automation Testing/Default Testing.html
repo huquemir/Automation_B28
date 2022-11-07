@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default Testing</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Oct 23 20:40:23 EDT 2022</td>
+<td>Started on:</td><td>Sun Nov 06 19:18:19 EST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>32 seconds (32814 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (972 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,53 +67,87 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.smarttechqa.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.smarttechqa.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to search the products", "Testing Login functionality to the application"</td>
-<td></td>
-<td>5</td>
-<td>com.smarttechqa.runner.FeatureRunner@2ccca26f</td></tr>
+<td title='com.smarttechqa.runner.ApiRunner.runScenario()'><b>runScenario</b><br>Test class: com.smarttechqa.runner.ApiRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The Authorized admin user can Get all Products.", "User is able to Retrieve product information as well as post new products,"</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.reflection.ReflectionCache
+	at org.codehaus.groovy.runtime.dgmimpl.NumberNumberMetaMethod.&lt;clinit&gt;(NumberNumberMetaMethod.java:33)
+	at java.base/java.lang.Class.newInstance(Class.java:645)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.createMetaMethodFromClass(MetaClassRegistryImpl.java:257)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.&lt;init&gt;(MetaClassRegistryImpl.java:110)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.&lt;init&gt;(MetaClassRegistryImpl.java:85)
+	at groovy.lang.GroovySystem.&lt;clinit&gt;(GroovySystem.java:36)
+	at org.codehaus.groovy.runtime.InvokerHelper.&lt;clinit&gt;(InvokerHelper.java:86)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.createMap(ScriptBytecodeAdapter.java:635)
+	at io.restassured.internal.ResponseParserRegistrar.&lt;init&gt;(ResponseParserRegistrar.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:346)
+	at com.smarttechqa.apistepdef.ProductApiStepDef.user_generates_a_token(ProductApiStepDef.java:32)
+	at ✽.User generates a token(file:///C:/Users/smarttech/git/repository/Techshop_Project_B28/Features/ProductsApi.feature:5)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1173504361", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1173504361'><pre>java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.reflection.ReflectionCache
+	at org.codehaus.groovy.runtime.dgmimpl.NumberNumberMetaMethod.&lt;clinit&gt;(NumberNumberMetaMethod.java:33)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:347)
+	at java.base/java.lang.Class.newInstance(Class.java:645)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.createMetaMethodFromClass(MetaClassRegistryImpl.java:257)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.&lt;init&gt;(MetaClassRegistryImpl.java:110)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.&lt;init&gt;(MetaClassRegistryImpl.java:85)
+	at groovy.lang.GroovySystem.&lt;clinit&gt;(GroovySystem.java:36)
+	at org.codehaus.groovy.runtime.InvokerHelper.&lt;clinit&gt;(InvokerHelper.java:86)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.createMap(ScriptBytecodeAdapter.java:635)
+	at io.restassured.internal.ResponseParserRegistrar.&lt;init&gt;(ResponseParserRegistrar.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:346)
+	at com.smarttechqa.apistepdef.ProductApiStepDef.user_generates_a_token(ProductApiStepDef.java:32)
+	at ✽.User generates a token(file:///C:/Users/smarttech/git/repository/Techshop_Project_B28/Features/ProductsApi.feature:5)
+</pre></div></td>
+<td>0</td>
+<td>com.smarttechqa.runner.ApiRunner@55342f40</td></tr>
 <tr>
-<td title='com.smarttechqa.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.smarttechqa.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to click on the latest products from the home page", "Testing Login functionality to the application"</td>
-<td></td>
-<td>3</td>
-<td>com.smarttechqa.runner.FeatureRunner@2ccca26f</td></tr>
+<td title='com.smarttechqa.runner.ApiRunner.runScenario()'><b>runScenario</b><br>Test class: com.smarttechqa.runner.ApiRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The Authorized admin user can Post new Product.", "User is able to Retrieve product information as well as post new products,"</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at com.smarttechqa.apistepdef.ProductApiStepDef.user_generates_a_token(ProductApiStepDef.java:32)
+	at ✽.User generates a token(file:///C:/Users/smarttech/git/repository/Techshop_Project_B28/Features/ProductsApi.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1402333753", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1402333753'><pre>java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at com.smarttechqa.apistepdef.ProductApiStepDef.user_generates_a_token(ProductApiStepDef.java:32)
+	at ✽.User generates a token(file:///C:/Users/smarttech/git/repository/Techshop_Project_B28/Features/ProductsApi.feature:5)
+</pre></div></td>
+<td>0</td>
+<td>com.smarttechqa.runner.ApiRunner@55342f40</td></tr>
 <tr>
-<td title='com.smarttechqa.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.smarttechqa.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to click on the cart button", "Testing Login functionality to the application"</td>
-<td></td>
-<td>4</td>
-<td>com.smarttechqa.runner.FeatureRunner@2ccca26f</td></tr>
+<td title='com.smarttechqa.runner.ApiRunner.runScenario()'><b>runScenario</b><br>Test class: com.smarttechqa.runner.ApiRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The Authorized admin user Update a new Product.", "User is able to Retrieve product information as well as post new products,"</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at com.smarttechqa.apistepdef.ProductApiStepDef.user_generates_a_token(ProductApiStepDef.java:32)
+	at ✽.User generates a token(file:///C:/Users/smarttech/git/repository/Techshop_Project_B28/Features/ProductsApi.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1869177530", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1869177530'><pre>java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at com.smarttechqa.apistepdef.ProductApiStepDef.user_generates_a_token(ProductApiStepDef.java:32)
+	at ✽.User generates a token(file:///C:/Users/smarttech/git/repository/Techshop_Project_B28/Features/ProductsApi.feature:5)
+</pre></div></td>
+<td>0</td>
+<td>com.smarttechqa.runner.ApiRunner@55342f40</td></tr>
 <tr>
-<td title='com.smarttechqa.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.smarttechqa.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "This is a scenario without a given or when", "Testing Login functionality to the application"</td>
-<td></td>
-<td>3</td>
-<td>com.smarttechqa.runner.FeatureRunner@2ccca26f</td></tr>
-<tr>
-<td title='com.smarttechqa.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.smarttechqa.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "This scenario tests all the invalid username and password", "Testing Login functionality to the application"</td>
-<td></td>
-<td>3</td>
-<td>com.smarttechqa.runner.FeatureRunner@2ccca26f</td></tr>
-<tr>
-<td title='com.smarttechqa.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.smarttechqa.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "This scenario tests all the invalid username and password", "Testing Login functionality to the application"</td>
-<td></td>
-<td>3</td>
-<td>com.smarttechqa.runner.FeatureRunner@2ccca26f</td></tr>
-<tr>
-<td title='com.smarttechqa.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.smarttechqa.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "This scenario tests all the invalid username and password", "Testing Login functionality to the application"</td>
-<td></td>
-<td>3</td>
-<td>com.smarttechqa.runner.FeatureRunner@2ccca26f</td></tr>
-<tr>
-<td title='com.smarttechqa.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.smarttechqa.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "This scenario tests all the invalid username and password", "Testing Login functionality to the application"</td>
-<td></td>
-<td>3</td>
-<td>com.smarttechqa.runner.FeatureRunner@2ccca26f</td></tr>
+<td title='com.smarttechqa.runner.ApiRunner.runScenario()'><b>runScenario</b><br>Test class: com.smarttechqa.runner.ApiRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The Authorized admin user can Delete a new Product.", "User is able to Retrieve product information as well as post new products,"</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at com.smarttechqa.apistepdef.ProductApiStepDef.user_generates_a_token(ProductApiStepDef.java:32)
+	at ✽.User generates a token(file:///C:/Users/smarttech/git/repository/Techshop_Project_B28/Features/ProductsApi.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace824900551", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace824900551'><pre>java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at com.smarttechqa.apistepdef.ProductApiStepDef.user_generates_a_token(ProductApiStepDef.java:32)
+	at ✽.User generates a token(file:///C:/Users/smarttech/git/repository/Techshop_Project_B28/Features/ProductsApi.feature:5)
+</pre></div></td>
+<td>0</td>
+<td>com.smarttechqa.runner.ApiRunner@55342f40</td></tr>
 </table><p>
 </body>
 </html>

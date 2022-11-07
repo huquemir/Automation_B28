@@ -73,6 +73,11 @@ public class CartStepDef extends BaseClass {
 	    Thread.sleep(5000);
 	}
 
-	
-
+	/*
+	@Then("User is able to hover over the profile")
+	public void user_is_able_to_hover_over_the_profile() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+*/
 }
