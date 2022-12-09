@@ -1,95 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8352" started-at="2022-11-13T20:59:58Z" finished-at="2022-11-13T21:00:07Z">
+  <suite name="Default suite" duration-ms="4277" started-at="2022-12-09T03:17:36Z" finished-at="2022-12-09T03:17:40Z">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.smarttechqa.runner.ApiRunner@76ed1b7c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="8352" started-at="2022-11-13T20:59:58Z" finished-at="2022-11-13T21:00:07Z">
-      <class name="com.smarttechqa.runner.ApiRunner">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.smarttechqa.runner.ApiRunner@76ed1b7c]" name="setUpClass" is-config="true" duration-ms="465" started-at="2022-11-13T20:59:59Z" finished-at="2022-11-13T20:59:59Z">
+    <test name="Default test" duration-ms="4277" started-at="2022-12-09T03:17:36Z" finished-at="2022-12-09T03:17:40Z">
+      <class name="com.smarttechqa.testng.DataFromExcel">
+        <test-method status="PASS" signature="openBrowser(java.lang.String, java.lang.String)[pri:0, instance:com.smarttechqa.testng.DataFromExcel@355ce81c]" name="openBrowser" duration-ms="4233" started-at="2022-12-09T03:17:36Z" data-provider="Search" finished-at="2022-12-09T03:17:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7316523a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.smarttechqa.runner.ApiRunner@76ed1b7c]" name="runScenario" duration-ms="4796" started-at="2022-11-13T20:59:59Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-13T21:00:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["The Authorized admin user can Get all Products."]]>
+                <![CDATA[amazon]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["User is able to Retrieve product information as well as post new products,"]]>
+                <![CDATA[echo]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.smarttechqa.runner.ApiRunner@76ed1b7c]" name="runScenario" duration-ms="1023" started-at="2022-11-13T21:00:04Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-13T21:00:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["The Authorized admin user can Post new Product."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User is able to Retrieve product information as well as post new products,"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.smarttechqa.runner.ApiRunner@76ed1b7c]" name="runScenario" duration-ms="949" started-at="2022-11-13T21:00:05Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-13T21:00:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["The Authorized admin user Update a new Product."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User is able to Retrieve product information as well as post new products,"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.smarttechqa.runner.ApiRunner@76ed1b7c]" name="runScenario" duration-ms="681" started-at="2022-11-13T21:00:06Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-13T21:00:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["The Authorized admin user can Delete a new Product."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User is able to Retrieve product information as well as post new products,"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.smarttechqa.runner.ApiRunner@76ed1b7c]" name="tearDownClass" is-config="true" duration-ms="391" started-at="2022-11-13T21:00:06Z" finished-at="2022-11-13T21:00:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- com.smarttechqa.runner.ApiRunner -->
+        </test-method> <!-- openBrowser -->
+      </class> <!-- com.smarttechqa.testng.DataFromExcel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
