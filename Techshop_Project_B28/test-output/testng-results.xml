@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4277" started-at="2022-12-09T03:17:36Z" finished-at="2022-12-09T03:17:40Z">
+  <suite name="Default suite" duration-ms="5007" started-at="2022-12-09T04:16:00Z" finished-at="2022-12-09T04:16:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4277" started-at="2022-12-09T03:17:36Z" finished-at="2022-12-09T03:17:40Z">
+    <test name="Default test" duration-ms="5007" started-at="2022-12-09T04:16:00Z" finished-at="2022-12-09T04:16:05Z">
       <class name="com.smarttechqa.testng.DataFromExcel">
-        <test-method status="PASS" signature="openBrowser(java.lang.String, java.lang.String)[pri:0, instance:com.smarttechqa.testng.DataFromExcel@355ce81c]" name="openBrowser" duration-ms="4233" started-at="2022-12-09T03:17:36Z" data-provider="Search" finished-at="2022-12-09T03:17:40Z">
+        <test-method status="PASS" signature="openBrowser(java.lang.String, java.lang.String)[pri:0, instance:com.smarttechqa.testng.DataFromExcel@355ce81c]" name="openBrowser" duration-ms="4958" started-at="2022-12-09T04:16:00Z" data-provider="Search" finished-at="2022-12-09T04:16:05Z">
           <params>
             <param index="0">
               <value>
