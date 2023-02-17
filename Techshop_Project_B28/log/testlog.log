@@ -226,3 +226,13 @@
 2022-11-20 12:51:00,255 - Automation Testing -INFO - Test has started
 2022-11-20 12:51:11,607 - Automation Testing -INFO - Test is Successful
 2022-11-20 12:51:12,136 - Automation Testing -INFO - Test is finished
+2023-01-26 19:59:09,904 - Automation Testing -INFO - Test has started
+2023-01-26 19:59:30,988 - Automation Testing -INFO - Test has failed
+2023-01-26 19:59:30,988 - Automation Testing -INFO - Test has started
+2023-01-26 19:59:45,535 - Automation Testing -INFO - Test is Successful
+2023-01-26 19:59:46,127 - Automation Testing -INFO - Test is finished
+2023-01-26 20:01:09,424 - Automation Testing -INFO - Test has started
+2023-01-26 20:01:22,299 - Automation Testing -INFO - Test has failed
+2023-01-26 20:01:22,299 - Automation Testing -INFO - Test has started
+2023-01-26 20:01:33,580 - Automation Testing -INFO - Test is Successful
+2023-01-26 20:01:34,033 - Automation Testing -INFO - Test is finished
