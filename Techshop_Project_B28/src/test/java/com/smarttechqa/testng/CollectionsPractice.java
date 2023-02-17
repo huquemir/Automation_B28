@@ -123,9 +123,10 @@ public class CollectionsPractice {
 	}
 			
 
-	public static void maxSubArray() {
+	public static void maxSumSequence() {
         // -5, -4, -3, -2, -1, 0, 1, 2, 3.....
 		
+		// -4, -2, -1, 1, 1, 2, 3, 3
 		int[] nums = {1, 2, -4, 1, 3, -2, 3, -1};
         int maxT = Integer.MIN_VALUE;
 		 int sumT = 0;
@@ -154,7 +155,7 @@ public class CollectionsPractice {
 		//CollectionsPractice.secondHighestSalary();
 		//CollectionsPractice.findDuplicateNumber();
 		//CollectionsPractice.isPrimeNumber();
-		CollectionsPractice.maxSubArray();
+		CollectionsPractice.maxSumSequence();
 	}
 	
 	
